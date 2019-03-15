@@ -1,6 +1,5 @@
 
-body {
-  text-align:center;
+body{
   font-size:18px;
   margin: 0;
   text-align: center;
@@ -10,12 +9,24 @@ body {
   cssfontstack.com and clipboard copy the similar font family. But more
   impressive to do, is to go to Google Fonts and embed a font from there.
   */
-  background-color: #E4F9F5
+  background-color: #E4F9F5;
+  word-spacing: normal;
 
+}
+
+p {
+  font-size: 22px;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover{
+  font-size: 1.2em;
+  color:darkblue;
+  border: 2px solid skyblue;
+
 }
 
 
@@ -110,7 +121,7 @@ h1,h2,h3,h4 {
 
 #birdycen {
 position:relative;
-width:3%;
+width:10%;
 
 
 /* position: absolute;
@@ -175,30 +186,47 @@ right:734px; */
 
     }
 
+    .borderup {
+      display:inline-block;
+      background-color:darkgray;
+      width: 109%
+
+    }
 
     .col1, .col2 {
     background-color:rgba(255,255,255,0.9);
     margin: 0 auto;
     width:50%;
     font-size: 30px;
-    text-align: center;
+    /* text-align: center; */
+
     }
 
     .col1 {
       float:left;
       min-height:450px;
+      text-align:left;
     }
     .col2{
       float:right;
       min-height:450px;
+      color:black;
+      text-align: left;
+
     }
 
     .bottom-container {
-      display:block;
+      display:inline-block;
     }
 
-    .borderup {
-      display:block;
-      background-color:darkgray;
+    textarea {
+      height:100px;
+      width:200px;
+    }
 
+    ::placeholder {
+      color:skyblue;
+    }
+
+  input:placeholder-shown
     }
