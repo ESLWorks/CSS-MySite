@@ -1,17 +1,15 @@
-
-body{
-  font-size:18px;
+body {
+  font-size: 18px;
   margin: 0;
   text-align: center;
   /*Used text-align center to center everything in the divs so far.*/
-  font-family:'Lato','Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Lato', 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Prefer to use web-safe fonts. If not, we can use back-ups. Check out
   cssfontstack.com and clipboard copy the similar font family. But more
   impressive to do, is to go to Google Fonts and embed a font from there.
   */
   background-color: #E4F9F5;
   word-spacing: normal;
-
 }
 
 p {
@@ -22,40 +20,38 @@ a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   font-size: 1.2em;
-  color:darkblue;
+  color: darkblue;
   border: 2px solid skyblue;
-
 }
-
 
 hr {
-  border:none;
-  border-top:  5px dotted lightgray;
+  border: none;
+  border-top: 5px dotted lightgray;
   width: 30%;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
-h1,h2,h3,h4 {
-  font-family:'Roboto', sans-serif;
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
   margin-top: 0;
   /*To specifically center the Im text use the width and margin below.
   However, do not use the text-align center in body at the same time.
   text-align center in body is used as it centers eveything in body.
   width: 15%;
   margin: 0 auto; */
-
 }
 
 .top-container {
-  padding-top: 75px; /*Since changing the position from static to relative, adding
+  padding-top: 75px;
+  /*Since changing the position from static to relative, adding
   50px to the top container only adds white space to the body/bad design,
   apparently increase the top of container. Take out top 50px, increase the
   height of the div and lower the top cloud by adding padding-top to
   the top cloud. */
   background-color: #E4F9F5;
-  position:relative;
+  position: relative;
   /*Change position to relative to manipulate elements in container.
   Now the bottom cloud with a posiiton of absolute can be properly
   moved within the div. */
@@ -86,15 +82,13 @@ h1,h2,h3,h4 {
   */
   /*2. What if I want to move the top cloud in the future! Better I add the
   padding to the div itself, the top of the div top container!!*/
-  position:absolute;
+  position: absolute;
   /*3. To avoid difficulty moving this top cloud, opt for, again, use absolute
   positioning to place the clouds relative to the border of the top container.
   That looks like this below: */
-  right:300px;
-  top:50px;
-
+  right: 300px;
+  top: 50px;
 }
-
 
 .bottom-cloud {
   position: absolute;
@@ -106,127 +100,117 @@ h1,h2,h3,h4 {
    I need to position the cloud relative to the top-container in order
    move it around. This is done by setting the positon of the top container
    from static, to position:relative */
-   /* 4. Same thing will be done here as in comment 4 */
-   bottom:300px;
-   left:300px;
+  /* 4. Same thing will be done here as in comment 4 */
+  bottom: 300px;
+  left: 300px;
 }
-
 
 .profPic {
   border-radius: 50%;
-  width:15%;
+  width: 15%;
   padding: 50px;
 }
 
-
 #birdycen {
-position:relative;
-width:10%;
-
-
-/* position: absolute;
+  position: relative;
+  width: 10%;
+  /* position: absolute;
 width: 30px;
 top:167px;
 right:734px; */
 }
 
-    .box {
-      width: 50%;
-      margin: 10px;
-      text-align: center;
-      line-height: 50px;
-      font-size: 20px;
-      padding: 0;
-      max-width: 500px;
-      max-height: 500px;
-    }
+.box {
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  padding: 0;
+  max-width: 500px;
+  max-height: 500px;
+}
 
-    .bio {
-      text-align:center;
-      margin: 10px;
-      line-height: 50px;
-      font-size: 20px;
-    }
+.bio {
+  text-align: center;
+  margin: 10px;
+  line-height: 50px;
+  font-size: 20px;
+}
 
-    #webdo,
-    #skills {
-      max-width: 600px;
-      margin: 0 auto;
-    }
+#webdo,
+#skills {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-    .thirtythree {
-      display: inline-flex;
-      width: 0 auto;
-      flex-wrap: nowrap;
-      position: relative;
-    }
+.thirtythree {
+  display: inline-flex;
+  width: 0 auto;
+  flex-wrap: nowrap;
+  position: relative;
+}
 
-    .box1 {
-      height: auto;
-      width: 33%;
-      float: left;
-    }
+.box1 {
+  height: auto;
+  width: 33%;
+  float: left;
+}
 
-    .box2 {
-      height: auto;
-      width: 67%;
-      float: left;
-    }
+.box2 {
+  height: auto;
+  width: 67%;
+  float: left;
+}
 
-    #worker {
-      width:100px;
-    }
+#worker {
+  width: 100px;
+}
 
-    .footer-link {
-      padding-left: 10px;
-    }
+.footer-link {
+  padding-left: 10px;
+}
 
-    .fab {
-      color:black;
+.fab {
+  color: black;
+}
 
-    }
+.borderup {
+  display: inline-block;
+  background-color: darkgray;
+  width: 109%
+}
 
-    .borderup {
-      display:inline-block;
-      background-color:darkgray;
-      width: 109%
+.col1, .col2 {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  width: 50%;
+  font-size: 30px;
+  /* text-align: center; */
+}
 
-    }
+.col1 {
+  float: left;
+  min-height: 450px;
+  text-align: left;
+}
 
-    .col1, .col2 {
-    background-color:rgba(255,255,255,0.9);
-    margin: 0 auto;
-    width:50%;
-    font-size: 30px;
-    /* text-align: center; */
+.col2 {
+  float: right;
+  min-height: 450px;
+  color: black;
+  text-align: left;
+}
 
-    }
+.bottom-container {
+  display: inline-block;
+}
 
-    .col1 {
-      float:left;
-      min-height:450px;
-      text-align:left;
-    }
-    .col2{
-      float:right;
-      min-height:450px;
-      color:black;
-      text-align: left;
+textarea {
+  height: 100px;
+  width: 200px;
+}
 
-    }
-
-    .bottom-container {
-      display:inline-block;
-    }
-
-    textarea {
-      height:100px;
-      width:200px;
-    }
-
-    ::placeholder {
-      color:skyblue;
-    }
-
-  input:placeholder-shown
-    }
+::placeholder {
+  color: skyblue;
+}
