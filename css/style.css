@@ -1,3 +1,9 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-size: 18px;
   margin: 0;
@@ -10,11 +16,23 @@ body {
   */
   background-color: #E4F9F5;
   word-spacing: normal;
+
 }
 
-p {
-  font-size: 22px;
+li {
+  list-style: none;
+  display:inline-block;
+  padding: 0 20px;
 }
+/*
+.nav {
+  position:relative;
+  width:100%;
+  height:100%;
+  background-color: skyblue;
+  vertical-align: middle;
+} */
+
 
 a {
   text-decoration: none;
@@ -44,7 +62,7 @@ h1, h2, h3, h4 {
 }
 
 .top-container {
-  padding-top: 75px;
+  padding: 75px 0;
   /*Since changing the position from static to relative, adding
   50px to the top container only adds white space to the body/bad design,
   apparently increase the top of container. Take out top 50px, increase the
@@ -55,6 +73,7 @@ h1, h2, h3, h4 {
   /*Change position to relative to manipulate elements in container.
   Now the bottom cloud with a posiiton of absolute can be properly
   moved within the div. */
+  height: calc(95vh - 100px);
 }
 
 .mountain {
@@ -62,7 +81,7 @@ h1, h2, h3, h4 {
 }
 
 .pro-underline {
-  text-decoration-line: underline;
+  text-decoration: underline;
 }
 
 .top-cloud {
@@ -101,23 +120,25 @@ h1, h2, h3, h4 {
    move it around. This is done by setting the positon of the top container
    from static, to position:relative */
   /* 4. Same thing will be done here as in comment 4 */
-  bottom: 300px;
+  /* bottom: 300px; */
   left: 300px;
 }
+
+
+#birdycen {
+  position: relative;
+  width: 2%;
+  /* position: absolute;
+width: 30px;
+top:167px;
+right:734px; */
+}
+
 
 .profPic {
   border-radius: 50%;
   width: 15%;
   padding: 50px;
-}
-
-#birdycen {
-  position: relative;
-  width: 10%;
-  /* position: absolute;
-width: 30px;
-top:167px;
-right:734px; */
 }
 
 .box {
@@ -134,7 +155,6 @@ right:734px; */
 .bio {
   text-align: center;
   margin: 10px;
-  line-height: 50px;
   font-size: 20px;
 }
 
@@ -182,7 +202,7 @@ right:734px; */
 }
 
 .col1, .col2 {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color:rgba(255, 255, 255, 0.9);
   margin: 0 auto;
   width: 50%;
   font-size: 30px;
@@ -213,4 +233,33 @@ textarea {
 
 ::placeholder {
   color: skyblue;
+}
+
+.section {
+  height:75vh;
+}
+
+.section2 {
+  height:50vh;
+}
+
+/* .section3 {
+  height:40vh;
+} */
+
+p {
+  font-size: 1em;
+  width: 0 auto;
+  max-width:900px;
+  text-align: center;
+  display:inline-block;
+  border:hidden;
+}
+
+ul {
+  margin:0;
+}
+
+.reduce {
+  
 }
